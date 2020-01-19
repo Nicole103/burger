@@ -1,20 +1,47 @@
-<h1>Burger orders</h1>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Burgers! Burgers! Burgers!</h1>
+      <p class="lead">Welcome to the Burgers! Burgers! Burgers! Where we can make your favorite Burger!</p>
+    </div>
+  </div>
 
-<h3>order your burgers here!</h3>
 
-<ul>
-  {{#each burgers}}
-  	<li>
-  	   <p>ID: {{this.id}}</p>
-       <p>burger: {{this.wish}}</p>
-  	</li>
-  {{/each}}
-</ul>
+  <div class="card">
+    <div class="card-header">
+      Order here!
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">What's your Burger?</h5>
+      <p class="card-text">We can make any kind of burger!What kind of burger would you like today?</p>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="burger">Order here:</label>
+          <input type="text" class="form-control" id="burgerOrder" placeholder="">
+        </div>
+        <a href="#" class="btn btn-primary">Place order</a>
+      </form>
+    </div>
+  </div>
+</div>
 
-<div>
-  <form action="/" method="POST">
-  	<textarea type="text" name="burger"></textarea>
-
-  	<button type="submit">Create</button>
-  </form>
+<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">Ordered Burgers</div>
+  <div class="card-body">
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{>burgers/burger-block devour=false}}
+    {{/unless}}
+    {{/each}}
+  </div>
+</div>
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="devoured-card">
+  <div class="card-header">Devoured Burgers</div>
+  <div class="card-body">
+    {{#each burgers}}
+    {{#if devoured}}
+    {{>burgers/burger-devoured devour= true}}
+    {{/if}}
+    {{/each}}
+  </div>
 </div>
