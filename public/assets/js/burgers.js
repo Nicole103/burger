@@ -1,4 +1,5 @@
 $(function(){
+    //create burger 
     $(".create-form").on("submit", function(event){
         event.preventDefault();
 
@@ -17,4 +18,22 @@ $(function(){
             }
         );
     });
+    //update burger "devour burger"
+    $(".change-devour").on("click", function(event){
+        var id = $(this).data("id");
+        var newDevour = $(this).data("newdevour");
+        var newDevourState = {
+            devoured: "true"
+        };
+        $.ajax("/api/burgers/"+id,{
+            type:"PUT",
+            data: newDevourState
+        }).then(
+            function(){
+                console.log("changed devour to", newDevour);
+                location.reload();
+            }
+        );
+    });
+    //delete burger from devoured list
 })
