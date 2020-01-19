@@ -25,7 +25,7 @@ $(function(){
         var newDevourState = {
             devoured: "true"
         };
-        $.ajax("/api/burgers/"+id,{
+        $.ajax("/api/burgers/" + id,{
             type:"PUT",
             data: newDevourState
         }).then(
@@ -36,4 +36,15 @@ $(function(){
         );
     });
     //delete burger from devoured list
-})
+    $(".delete-burger").on("click", function(event){
+        var id = $(this).data("id");
+        $.ajax("/api/burgers/"+ id, {
+            type: "DELETE",
+        }).then(
+            function(){
+                console.log("delete burger", id);
+                location.reload();
+            }
+        );
+    });
+});
