@@ -18,7 +18,7 @@ router.get("/", function (req, res) {
 
 
 // .post "create" router
-router.post("/api/burger", function (req, res) {
+router.post("/api/burgers", function (req, res) {
     burger.create([
         "burger_name", "devoured"
     ], [
@@ -29,7 +29,7 @@ router.post("/api/burger", function (req, res) {
 });
 
 // .put "update" router
-router.put("/api/burger/", function (req, res) {
+router.put("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
 
