@@ -1,29 +1,7 @@
-/*Color of Devoured burgers card header*/
-#devoured-card-header  {
-    background-color: #ca341f;
-}
-
-/*Font color of devoured burger names*/
-.devoured-burger-name {
-    color: #ca341f;
-}
-
-/* Use Righteous font from Google fonts*/
 body {
-    font-family: 'Righteous', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
-/* Font size of app title in jumbotron*/
-#app-title {
-    font-size: 90px;
-}
-
-/*Font size of lead statement in jumbotron*/
-.lead {
-    font-size: 24px;
-}
-
-/* Burger background image*/
 body {
     background-image: url("/assets/img/pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg");
     /*Photo by Gianna Ciaramello on Unsplash*/
@@ -31,13 +9,3 @@ body {
     background-size: cover;
 }
 
-/* Footer color */
-.footer-body {
-    background-color: #ca341f;
-}
-
-/*Border styling for devoured burgers card and footer */
-.devoured-card, .footer {  
-    border-style: solid;
-    border-color: #ca341f;
-}
