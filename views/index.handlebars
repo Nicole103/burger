@@ -19,38 +19,45 @@
           <label for="burger">Order here:</label>
           <input type="text" class="form-control" id="burgerOrder" placeholder="">
         </div>
-       <button type="submit" class="btn btn-primary">Place Order!</button>
+        <button type="submit" class="btn btn-primary">Place Order!</button>
       </form>
     </div>
   </div>
-</div>
 
-<div class="card text-white bg-info mb-3" style="max-width: 18rem;" id="ordered">
-  <div class="card-header">Ordered Burgers</div>
-  <div class="card-body">
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{>burgers/burger-block devour=false}}
-    {{/unless}}
-    {{/each}}
+
+  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+    <div class="ordered">
+      <div class="card-header">Ordered Burgers</div>
+      <div class="card-body">
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{>burgers/burger-block devour=false}}
+        {{/unless}}
+        {{/each}}
+      </div>
+    </div>
   </div>
-</div>
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="devoured-card">
-  <div class="card-header">Devoured Burgers</div>
-  <div class="card-body">
-    {{#each burgers}}
-    {{#if devoured}}
-    {{>burgers/burger-devoured devour= true}}
-    {{/if}}
-    {{/each}}
+
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="devoured-card">
+      <div class="card-header">Devoured Burgers</div>
+      <div class="card-body">
+        {{#each burgers}}
+        {{#if devoured}}
+        {{>burgers/burger-devoured devour= true}}
+        {{/if}}
+        {{/each}}
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="card">
   <div class="footer">
-  <div class="card-body">
-    Thank you for visiting The Burgers Shop!
-    <a href="https://github.com/Nicole103/burger" class="btn btn-info">GitHub Repo</a>
-    <small>Background photo by Pablo Merchán Montes on Unsplash</small>
+    <div class="card-body">
+      Thank you for visiting The Burgers Shop!
+      <a href="https://github.com/Nicole103/burger" class="btn btn-info">GitHub Repo</a>
+      <small>Background photo by Pablo Merchán Montes on Unsplash</small>
     </div>
+  </div>
 </div>
