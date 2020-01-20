@@ -1,11 +1,50 @@
+
+.jumbotron-fluid {
+    background-color: coral;
+}
+h1{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+    color: rgb(32, 166, 184);
+    font-size: 120px;
+    text-shadow: 4px 2px black;
+}
+.card-header {
+    background-color: black;
+    font-family: 'Abril Fatface', cursive;
+    color: coral;
+   
+    font-size: 32px;
+    text-align: center;
+   
+}
+#order{
+ background-color: rgb(221, 235, 235);
+}
+label{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
 }
 
 body {
-    background-image: url("/assets/img/pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg");
+    background-image: url("/assets/img/pablo-merchan-montes-dc_JMu8lb5U-unsplash2.jpg");
     /*Photo by Gianna Ciaramello on Unsplash*/
     background-repeat: no-repeat;
     background-size: cover;
 }
+.footer {
+    background-color: coral;
+    text-align: center;
 
+}
