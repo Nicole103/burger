@@ -9,18 +9,23 @@ Once you open the burger link https://thawing-dusk-21446.herokuapp.com/ enter in
 
 ### basic steps
     1. Go to: https://thawing-dusk-21446.herokuapp.com/ 
-    <img scr="public/assets/img/ss1.PNG" width="100">
+    
+   <img src="public/assets/img/ss1.PNG">
 
     2. Enter in your favorite burger 
-     <img scr="public/assets/img/ss3.PNG" width="100">
+    
+   <img src="public/assets/img/ss3.PNG">
 
     3. Click devour when you have eaten the burger
-     <img scr="public/assets/img/ss2.PNG" width="100">
+    
+   <img src="public/assets/img/ss2.PNG">
 
     4. Click trash it when you want to throw out the trash
-     <img scr="public/assets/img/ss4.PNG" width="100">
+    
+   <img src="public/assets/img/ss4.PNG">
 
-      <img scr="public/assets/img/ss5.PNG" width="100">
+   <img src="public/assets/img/ss5.PNG">
+
 
 ## Technologies Used
 * Node js

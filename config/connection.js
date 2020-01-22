@@ -14,7 +14,7 @@ if(process.env.JAWSDB_URL){
     password: process.env.ROOT_PASS,
     database: "burger_db"
 });
-// }
+}
 connection.connect(function (err) {
     if (err) {
         console.error("error connecting: " + err.stack);
