@@ -9,10 +9,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nicole103/burger/issues"
-  },
-  "homepage": "https://github.com/Nicole103/burger#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
