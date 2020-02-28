@@ -1,12 +1,11 @@
 
 var express = require("express");
 
-var app = express();
-
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
 var PORT = process.env.PORT || 3000;
 
+var app = express();
 //Use express static fpr the public folder
 app.use(express.static("public"));
 
