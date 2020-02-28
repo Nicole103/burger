@@ -1,7 +1,7 @@
 
 var mysql = require("mysql");
 // var path = require("path");
-
+var connection;
 require('dotenv').config();
 
 if(process.env.JAWSDB_URL){
@@ -10,7 +10,7 @@ if(process.env.JAWSDB_URL){
  connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "password",
+    password: process.env.ROOT_PASS,
     database: "burger_db"
 });
 };
