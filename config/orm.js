@@ -1,4 +1,4 @@
-var connection = require("../config/connection.js");
+var connection = require("../config/connection");
 
 //helper function to creat ?? array ie ["?", "?", "?"].toString() => "?,?,?";
 function printQuestionMarks(num) {
